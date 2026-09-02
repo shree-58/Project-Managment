@@ -1,0 +1,1113 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow | Project Management</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styyle.css ">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background">
+        <div class="bg-circle circle-one"></div>
+        <div class="bg-circle circle-two"></div>
+        <div class="bg-circle circle-three"></div>
+    </div>
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">✦</div>
+
+            <div>
+                <h1>TaskFlow</h1>
+                <span>WORK SMARTER</span>
+            </div>
+        </div>
+
+
+        <nav class="navigation">
+
+            <p class="nav-title">MAIN MENU</p>
+
+            <a href="#" class="nav-link active">
+                <span>▦</span>
+                Dashboard
+            </a>
+
+            <a href="#projects" class="nav-link">
+                <span>▣</span>
+                Projects
+            </a>
+
+            <a href="#tasks" class="nav-link">
+                <span>✓</span>
+                My Tasks
+                <b class="notification">4</b>
+            </a>
+
+            <a href="#calendar" class="nav-link">
+                <span>□</span>
+                Calendar
+            </a>
+
+            <a href="#team" class="nav-link">
+                <span>♧</span>
+                Team
+            </a>
+
+
+            <p class="nav-title space">WORKSPACE</p>
+
+            <a href="#" class="nav-link">
+                <span>⚙</span>
+                Settings
+            </a>
+
+            <a href="#" class="nav-link">
+                <span>?</span>
+                Help Center
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="upgrade-card">
+                <div class="upgrade-icon">⚡</div>
+
+                <h3>Upgrade your workspace</h3>
+
+                <p>
+                    Unlock unlimited projects and
+                    advanced tools.
+                </p>
+
+                <button>Upgrade Now</button>
+            </div>
+
+
+            <div class="profile">
+
+                <div class="avatar">AK</div>
+
+                <div class="profile-info">
+                    <strong>Alex Kumar</strong>
+                    <span>Project Manager</span>
+                </div>
+
+                <button class="more-btn">•••</button>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+
+        <header class="topbar">
+
+            <div class="mobile-logo">
+                <div class="logo-icon">✦</div>
+                <strong>TaskFlow</strong>
+            </div>
+
+            <div class="welcome">
+
+                <span>Tuesday, September 1, 2026</span>
+
+                <h2>
+                    Good morning, Alex
+                    <span>👋</span>
+                </h2>
+
+            </div>
+
+
+            <div class="top-actions">
+
+                <button class="icon-button" title="Search">
+                    ⌕
+                </button>
+
+                <button class="icon-button notification-button" title="Notifications">
+                    ♢
+                    <span></span>
+                </button>
+
+                <button class="create-button" id="openProjectBtn">
+                    + New Project
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= STATISTICS ================= -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card purple">
+
+                <div class="stat-top">
+                    <div class="stat-icon">▣</div>
+                    <span class="stat-change positive">+12%</span>
+                </div>
+
+                <span class="stat-label">Total Projects</span>
+
+                <strong>24</strong>
+
+                <div class="mini-progress">
+                    <span style="width: 72%;"></span>
+                </div>
+
+                <small>18 active projects</small>
+
+            </div>
+
+
+            <div class="stat-card blue">
+
+                <div class="stat-top">
+                    <div class="stat-icon">✓</div>
+                    <span class="stat-change positive">+8%</span>
+                </div>
+
+                <span class="stat-label">Tasks Completed</span>
+
+                <strong>186</strong>
+
+                <div class="mini-progress">
+                    <span style="width: 84%;"></span>
+                </div>
+
+                <small>84% completion rate</small>
+
+            </div>
+
+
+            <div class="stat-card orange">
+
+                <div class="stat-top">
+                    <div class="stat-icon">◷</div>
+                    <span class="stat-change warning">5 due</span>
+                </div>
+
+                <span class="stat-label">Pending Tasks</span>
+
+                <strong>32</strong>
+
+                <div class="mini-progress">
+                    <span style="width: 42%;"></span>
+                </div>
+
+                <small>5 tasks due today</small>
+
+            </div>
+
+
+            <div class="stat-card green">
+
+                <div class="stat-top">
+                    <div class="stat-icon">♧</div>
+                    <span class="stat-change positive">+3</span>
+                </div>
+
+                <span class="stat-label">Team Members</span>
+
+                <strong>18</strong>
+
+                <div class="team-mini">
+
+                    <span>AM</span>
+                    <span>RK</span>
+                    <span>JS</span>
+                    <span>+15</span>
+
+                </div>
+
+                <small>Working across 6 teams</small>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="section-block" id="projects">
+
+            <div class="section-header">
+
+                <div>
+                    <span class="section-label">YOUR WORKSPACE</span>
+                    <h2>Active Projects</h2>
+                </div>
+
+                <button class="view-all">
+                    View all →
+                </button>
+
+            </div>
+
+
+            <div class="project-grid">
+
+
+                <!-- PROJECT 1 -->
+
+                <article class="project-card">
+
+                    <div class="project-top">
+
+                        <div class="project-symbol purple-bg">
+                            ◈
+                        </div>
+
+                        <button class="card-menu">•••</button>
+
+                    </div>
+
+                    <span class="project-category purple-text">
+                        DESIGN
+                    </span>
+
+                    <h3>Website Redesign</h3>
+
+                    <p>
+                        Create a modern and responsive
+                        website experience.
+                    </p>
+
+
+                    <div class="project-progress">
+
+                        <div class="progress-heading">
+                            <span>Progress</span>
+                            <strong>72%</strong>
+                        </div>
+
+                        <div class="progress">
+                            <span style="width:72%"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-footer">
+
+                        <div class="avatars">
+
+                            <span class="avatar small avatar-purple">AM</span>
+                            <span class="avatar small avatar-blue">RK</span>
+                            <span class="avatar small avatar-orange">JS</span>
+
+                        </div>
+
+                        <span class="due-date">
+                            📅 Sep 12
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 2 -->
+
+                <article class="project-card">
+
+                    <div class="project-top">
+
+                        <div class="project-symbol blue-bg">
+                            ◉
+                        </div>
+
+                        <button class="card-menu">•••</button>
+
+                    </div>
+
+                    <span class="project-category blue-text">
+                        DEVELOPMENT
+                    </span>
+
+                    <h3>Mobile App</h3>
+
+                    <p>
+                        Build a powerful mobile experience
+                        for our customers.
+                    </p>
+
+
+                    <div class="project-progress">
+
+                        <div class="progress-heading">
+                            <span>Progress</span>
+                            <strong>48%</strong>
+                        </div>
+
+                        <div class="progress blue-progress">
+                            <span style="width:48%"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-footer">
+
+                        <div class="avatars">
+
+                            <span class="avatar small avatar-green">PK</span>
+                            <span class="avatar small avatar-blue">SM</span>
+                            <span class="avatar small avatar-purple">+4</span>
+
+                        </div>
+
+                        <span class="due-date">
+                            📅 Sep 18
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 3 -->
+
+                <article class="project-card">
+
+                    <div class="project-top">
+
+                        <div class="project-symbol orange-bg">
+                            ◆
+                        </div>
+
+                        <button class="card-menu">•••</button>
+
+                    </div>
+
+                    <span class="project-category orange-text">
+                        MARKETING
+                    </span>
+
+                    <h3>Product Launch</h3>
+
+                    <p>
+                        Prepare campaigns and launch
+                        our latest product.
+                    </p>
+
+
+                    <div class="project-progress">
+
+                        <div class="progress-heading">
+                            <span>Progress</span>
+                            <strong>86%</strong>
+                        </div>
+
+                        <div class="progress orange-progress">
+                            <span style="width:86%"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-footer">
+
+                        <div class="avatars">
+
+                            <span class="avatar small avatar-orange">AK</span>
+                            <span class="avatar small avatar-green">TS</span>
+                            <span class="avatar small avatar-blue">+2</span>
+
+                        </div>
+
+                        <span class="due-date">
+                            📅 Sep 08
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= TASKS + CALENDAR ================= -->
+
+        <section class="dashboard-grid">
+
+
+            <!-- TASKS -->
+
+            <div class="content-card" id="tasks">
+
+                <div class="card-header">
+
+                    <div>
+                        <span class="section-label">TODAY</span>
+                        <h2>My Tasks</h2>
+                    </div>
+
+                    <button class="add-task" id="addTaskBtn">
+                        + Add Task
+                    </button>
+
+                </div>
+
+
+                <div class="task-list" id="taskList">
+
+
+                    <div class="task-item">
+
+                        <label class="task-check">
+                            <input type="checkbox">
+                            <span></span>
+                        </label>
+
+                        <div class="task-content">
+
+                            <strong>Review homepage designs</strong>
+
+                            <span>
+                                Website Redesign
+                            </span>
+
+                        </div>
+
+                        <span class="priority high">
+                            High
+                        </span>
+
+                        <span class="task-time">
+                            10:30 AM
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="task-item">
+
+                        <label class="task-check">
+                            <input type="checkbox">
+                            <span></span>
+                        </label>
+
+                        <div class="task-content">
+
+                            <strong>Team stand-up meeting</strong>
+
+                            <span>
+                                Mobile App
+                            </span>
+
+                        </div>
+
+                        <span class="priority medium">
+                            Medium
+                        </span>
+
+                        <span class="task-time">
+                            12:00 PM
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="task-item">
+
+                        <label class="task-check">
+                            <input type="checkbox">
+                            <span></span>
+                        </label>
+
+                        <div class="task-content">
+
+                            <strong>Prepare launch campaign</strong>
+
+                            <span>
+                                Product Launch
+                            </span>
+
+                        </div>
+
+                        <span class="priority high">
+                            High
+                        </span>
+
+                        <span class="task-time">
+                            2:30 PM
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="task-item">
+
+                        <label class="task-check">
+                            <input type="checkbox">
+                            <span></span>
+                        </label>
+
+                        <div class="task-content">
+
+                            <strong>Update project timeline</strong>
+
+                            <span>
+                                Website Redesign
+                            </span>
+
+                        </div>
+
+                        <span class="priority low">
+                            Low
+                        </span>
+
+                        <span class="task-time">
+                            4:00 PM
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CALENDAR -->
+
+            <div class="content-card calendar-card" id="calendar">
+
+                <div class="card-header">
+
+                    <div>
+                        <span class="section-label">SEPTEMBER 2026</span>
+                        <h2>Calendar</h2>
+                    </div>
+
+                    <div class="calendar-arrows">
+                        <button>‹</button>
+                        <button>›</button>
+                    </div>
+
+                </div>
+
+
+                <div class="calendar-week">
+
+                    <span>MON</span>
+                    <span>TUE</span>
+                    <span>WED</span>
+                    <span>THU</span>
+                    <span>FRI</span>
+                    <span>SAT</span>
+                    <span>SUN</span>
+
+                </div>
+
+
+                <div class="calendar-days">
+
+                    <span class="muted">31</span>
+                    <span class="today">1</span>
+                    <span>2</span>
+                    <span class="event">3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+
+                    <span>7</span>
+                    <span>8</span>
+                    <span class="event">9</span>
+                    <span>10</span>
+                    <span>11</span>
+                    <span class="event">12</span>
+                    <span>13</span>
+
+                    <span>14</span>
+                    <span>15</span>
+                    <span>16</span>
+                    <span class="event">17</span>
+                    <span>18</span>
+                    <span>19</span>
+                    <span>20</span>
+
+                    <span>21</span>
+                    <span>22</span>
+                    <span>23</span>
+                    <span>24</span>
+                    <span>25</span>
+                    <span>26</span>
+                    <span>27</span>
+
+                    <span>28</span>
+                    <span>29</span>
+                    <span>30</span>
+                    <span class="muted">1</span>
+                    <span class="muted">2</span>
+                    <span class="muted">3</span>
+                    <span class="muted">4</span>
+
+                </div>
+
+
+                <div class="upcoming">
+
+                    <strong>Upcoming</strong>
+
+                    <div>
+                        <span class="dot purple-dot"></span>
+                        Project review — Sep 3
+                    </div>
+
+                    <div>
+                        <span class="dot orange-dot"></span>
+                        Product launch — Sep 8
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= TEAM ================= -->
+
+        <section class="content-card team-section" id="team">
+
+            <div class="card-header">
+
+                <div>
+                    <span class="section-label">COLLABORATION</span>
+                    <h2>Team Members</h2>
+                </div>
+
+                <button class="view-all">
+                    Manage team →
+                </button>
+
+            </div>
+
+
+            <div class="team-grid">
+
+                <div class="member">
+
+                    <div class="member-avatar purple-avatar">
+                        AM
+                    </div>
+
+                    <div>
+                        <strong>Alex Morgan</strong>
+                        <span>UI/UX Designer</span>
+                    </div>
+
+                    <i class="online"></i>
+
+                </div>
+
+
+                <div class="member">
+
+                    <div class="member-avatar blue-avatar">
+                        RK
+                    </div>
+
+                    <div>
+                        <strong>Ryan Kim</strong>
+                        <span>Developer</span>
+                    </div>
+
+                    <i class="online"></i>
+
+                </div>
+
+
+                <div class="member">
+
+                    <div class="member-avatar orange-avatar">
+                        JS
+                    </div>
+
+                    <div>
+                        <strong>Jamie Smith</strong>
+                        <span>Marketing</span>
+                    </div>
+
+                    <i class="online"></i>
+
+                </div>
+
+
+                <div class="member">
+
+                    <div class="member-avatar green-avatar">
+                        PK
+                    </div>
+
+                    <div>
+                        <strong>Priya Kumar</strong>
+                        <span>Developer</span>
+                    </div>
+
+                    <i class="online"></i>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer>
+
+            <div>
+                <strong>✦ TaskFlow</strong>
+                <span>Plan · Build · Achieve</span>
+            </div>
+
+            <p>
+                © 2026 TaskFlow. Built for productive teams.
+            </p>
+
+        </footer>
+
+    </main>
+
+
+
+    <!-- ================= NEW PROJECT MODAL ================= -->
+
+    <div class="modal-overlay" id="projectModal">
+
+        <div class="modal">
+
+            <button class="close-modal" id="closeProjectBtn">
+                ×
+            </button>
+
+            <div class="modal-icon">
+                ✦
+            </div>
+
+            <span class="section-label">
+                CREATE SOMETHING GREAT
+            </span>
+
+            <h2>New Project</h2>
+
+            <p>
+                Start a new project and organize your
+                team's work.
+            </p>
+
+
+            <label>Project Name</label>
+
+            <input
+                type="text"
+                id="projectName"
+                placeholder="e.g. Website Redesign"
+            >
+
+
+            <label>Project Type</label>
+
+            <select id="projectType">
+
+                <option>Design</option>
+                <option>Development</option>
+                <option>Marketing</option>
+                <option>Research</option>
+
+            </select>
+
+
+            <div class="modal-buttons">
+
+                <button class="cancel-btn" id="cancelProjectBtn">
+                    Cancel
+                </button>
+
+                <button class="save-btn" id="saveProjectBtn">
+                    Create Project
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        /* ---------- Project Modal ---------- */
+
+        const projectModal =
+            document.getElementById("projectModal");
+
+        const openProjectBtn =
+            document.getElementById("openProjectBtn");
+
+        const closeProjectBtn =
+            document.getElementById("closeProjectBtn");
+
+        const cancelProjectBtn =
+            document.getElementById("cancelProjectBtn");
+
+        const saveProjectBtn =
+            document.getElementById("saveProjectBtn");
+
+
+        openProjectBtn.addEventListener("click", () => {
+
+            projectModal.classList.add("show");
+
+        });
+
+
+        closeProjectBtn.addEventListener("click", closeModal);
+
+        cancelProjectBtn.addEventListener("click", closeModal);
+
+
+        projectModal.addEventListener("click", (event) => {
+
+            if (event.target === projectModal) {
+
+                closeModal();
+
+            }
+
+        });
+
+
+        function closeModal() {
+
+            projectModal.classList.remove("show");
+
+        }
+
+
+
+        /* ---------- Create Project ---------- */
+
+        saveProjectBtn.addEventListener("click", () => {
+
+            const name =
+                document.getElementById("projectName").value.trim();
+
+            const type =
+                document.getElementById("projectType").value;
+
+
+            if (!name) {
+
+                alert("Please enter a project name.");
+
+                return;
+
+            }
+
+
+            alert(
+                `🎉 "${name}" project created successfully!`
+            );
+
+
+            document.getElementById("projectName").value = "";
+
+            closeModal();
+
+        });
+
+
+
+        /* ---------- Task Checkbox ---------- */
+
+        document.querySelectorAll(
+            ".task-check input"
+        ).forEach((checkbox) => {
+
+            checkbox.addEventListener("change", function () {
+
+                const task =
+                    this.closest(".task-item");
+
+                if (this.checked) {
+
+                    task.classList.add("completed");
+
+                } else {
+
+                    task.classList.remove("completed");
+
+                }
+
+            });
+
+        });
+
+
+
+        /* ---------- Add Task ---------- */
+
+        const addTaskBtn =
+            document.getElementById("addTaskBtn");
+
+        const taskList =
+            document.getElementById("taskList");
+
+
+        addTaskBtn.addEventListener("click", () => {
+
+            const taskName =
+                prompt("Enter the new task name:");
+
+            if (!taskName || !taskName.trim()) {
+
+                return;
+
+            }
+
+
+            const task = document.createElement("div");
+
+            task.className = "task-item";
+
+
+            task.innerHTML = `
+
+                <label class="task-check">
+
+                    <input type="checkbox">
+
+                    <span></span>
+
+                </label>
+
+                <div class="task-content">
+
+                    <strong>${escapeHTML(taskName.trim())}</strong>
+
+                    <span>New Task</span>
+
+                </div>
+
+                <span class="priority medium">
+                    Medium
+                </span>
+
+                <span class="task-time">
+                    Today
+                </span>
+
+            `;
+
+
+            taskList.appendChild(task);
+
+
+            const checkbox =
+                task.querySelector("input");
+
+
+            checkbox.addEventListener("change", function () {
+
+                if (this.checked) {
+
+                    task.classList.add("completed");
+
+                } else {
+
+                    task.classList.remove("completed");
+
+                }
+
+            });
+
+        });
+
+
+
+        /* ---------- Escape HTML ---------- */
+
+        function escapeHTML(text) {
+
+            return text
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+
+        }
+
+
+
+        /* ---------- Navigation ---------- */
+
+        document.querySelectorAll(".nav-link").forEach(link => {
+
+            link.addEventListener("click", function () {
+
+                document.querySelectorAll(".nav-link")
+                    .forEach(item => item.classList.remove("active"));
+
+                this.classList.add("active");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
+```
